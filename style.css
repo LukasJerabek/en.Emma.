@@ -1,0 +1,21 @@
+body {
+  background-color: #000000
+}
+
+
+.rotate {
+  -moz-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
+  -webkit-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
+  -o-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
+  transform: rotate(-90deg) translateX(-80px) translateY(-80px);
+}
+
+.rotate-item {
+  display:inline-block;
+}
+
+nav {
+  background-color: #FFFFFF;
+  height: 49;
+  width: 543;
+}
