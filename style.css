@@ -1,21 +1,98 @@
-body {
-  background-color: #000000
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(gilroy-light.otf);
 }
 
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  top: 0;
+}
+
+#container {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.nav {
+  background-color: #FFFFFF;
+  width: 406px;
+  height: 37px;
+  position: absolute;
+  top: 536px;
+  left: 81vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin: 0px;
+  margin-top: 4px;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: Gilroy-Light;
+  font-size: 2.5rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .rotate {
-  -moz-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
-  -webkit-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
-  -o-transform: rotate(-90deg) translateX(-80px) translateY(-80px);
-  transform: rotate(-90deg) translateX(-80px) translateY(-80px);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
 }
 
-.rotate-item {
-  display:inline-block;
-}
-
-nav {
-  background-color: #FFFFFF;
-  height: 49;
-  width: 543;
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
