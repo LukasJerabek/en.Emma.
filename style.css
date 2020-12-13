@@ -1,24 +1,14 @@
 @font-face {
   font-family: Gilroy-Light;
-  src: url(gilroy-light.otf);
+  src: url(fonts/gilroy-light.otf);
 }
 
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(fonts/gilroy-medium.ttf);
 }
 
 html {
-  box-sizing: border-box;
-
   /* Set font size for easy rem calculations
    * default document font size = 16px, 1rem = 16px, 100% = 16px
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
@@ -28,28 +18,27 @@ html {
 }
 
 body {
-  background-color: #000000;
-  position: absolute;
+  background-color: #000;
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
-  top: 0;
 }
 
-#container {
+#top-container {
+  display: flex;
   max-width: 1920px;
   margin: auto;
-  position: relative;
-  height: 1215px;
+}
+
+#footer-container {
+  max-width: 1920px;
 }
 
 .nav {
-  background-color: #FFFFFF;
+  background-color: #fff;
   width: 406px;
   height: 37px;
-  position: absolute;
-  top: 536px;
-  left: 81vw;
+  margin-top: 130px;
+  margin-bottom: auto;
+  margin-right: 0;
 }
 
 nav ul {
@@ -71,12 +60,12 @@ nav li {
 
 a:link {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 a:visited {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 a:hover {
@@ -84,34 +73,75 @@ a:hover {
   font-weight: bold;
 }
 
-.rotate {
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+a:active {
+  text-decoration: none;
+  font-weight: bold;
 }
 
-#logo{
+.rotate {
+  -moz-transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  -o-transform: rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: 0 0;
   display: block;
-  margin-left: auto;
+}
+
+#logo {
+  display: block;
+  margin-left: 38vw;
+  height: 461px;
+  padding-top:125px;
+  margin-bottom: 98px;
+}
+
+#links {
+  display: flex;
+}
+
+#facebook_link {
+  margin-left: 74vw;
+  margin-right: 8px;
+  width: 80px;
+  height: 88px;
+}
+
+#instagram_link {
   margin-right: auto;
+  width: 80px;
+  height: 88px;
 }
 
 #vertical_line {
   background-color: #33ff98ff;
   width: 3px;
   height: 311px;
-  position: absolute;
-  left: 79vw;
-  top: 0;
+  margin-left: auto;
+  margin-right: 29px;
+  margin-bottom: auto;
 }
 
 #horizontal_line {
   background-color: #33ff98ff;
   width: 943px;
   height: 3px;
-  position: absolute;
-  right: 0;
-  bottom: 113.5px;
+  margin-left: auto;
+  margin-top: 42.9px;
+  margin-bottom: 25.5px;
+}
+
+#text_container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  font-family: Gilroy-Medium;
+  font-size: 1.875rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 160px;
+  margin-right: 39vw;
+}
+
+#text {
+  padding-right: 45px;
 }
