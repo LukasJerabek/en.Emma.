@@ -29,23 +29,71 @@ body {
   width: 100%;
 }
 
+#top_container {
+  display: grid;
+  max-width: 1920px;
+  grid-template-columns: 43.54% auto;
+  grid-template-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#left_container {
+  grid-area: left;
+  font-family: Gilroy-Light;
+  align-self: end;
+  justify-self: end;
+  font-size: 2.5rem;
+  padding-right: 46px;
+  padding-bottom: 10px;
+  width: 406px;
+}
+
 .page-heading {
   font-family: Gilroy-BoldItalic;
   margin-bottom: 43px;
   font-size: 6rem;
 }
 
-#top_container {
-  display: grid;
-  grid-template-columns: 43.54% auto;
-  max-width: 1920px;
-  margin: auto;
+.contact-header {
+  font-family: Gilroy-Medium;
 }
 
-#footer-container {
-  max-width: 1920px;
+#top_row {
+  grid-area: top;
+  display: flex;
+  margin-bottom: 52px;
+}
+
+#logo {
+  width: 239.5px;
+  height: auto;
+  margin-top: 197px;
   margin-left: auto;
-  margin-right: auto;
+  display: block;
+}
+
+#vertical_line {
+  background-color: #33ff98ff;
+  width: 3px;
+  height: 311px;
+  margin-left: 20.55vw;
+  margin-right: 29px;
+  margin-bottom: auto;
+}
+
+/* 1920px / 16px = 120em */
+@media (min-width: 120em) {
+  #vertical_line {
+    margin-left: 394.5px;
+  }
+}
+
+/* 765px / 16px = 48em */
+@media (max-width: 48em) {
+  #vertical_line {
+    margin-left: 29px;
+  }
 }
 
 .nav {
@@ -58,8 +106,8 @@ body {
 }
 
 
-/* 943px / 16px = 59em */
-@media (max-width: 59em) {
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
   .nav {
   margin-right: auto;
   }
@@ -118,12 +166,40 @@ a:active {
   transform: rotate(-180deg);
 }
 
-#logo {
-  width: 239.5px;
-  height: auto;
-  margin-top: 197px;
+#bottom_row {
+  grid-area: bottom;
+  background-color: #000;
+  height: 268px;
+}
+
+#footer_container {
+  max-width: 1920px;
+  margin-top: 57.7px;
   margin-left: auto;
-  display: block;
+  margin-right: auto;
+}
+
+#horizontal_line {
+  background-color: #33ff98ff;
+  width: 943px;
+  height: 3px;
+  margin-left: 22.28vw;
+  margin-right: auto;
+  margin-bottom: 3.5px;
+}
+
+/* 1920px / 16px = 120em */
+@media (min-width: 120em) {
+  #horizontal_line {
+    margin-left: 427.8px;
+  }
+}
+
+/* 943px / 16px = 59em */
+@media (max-width: 59em) {
+  #horizontal_line {
+    width: 100%;
+  }
 }
 
 #links {
@@ -132,10 +208,17 @@ a:active {
 
 #fb_wrapper {
   background-color: #000;
-  margin-left: min(1414.3px, 73.66vw);
+  margin-left: 73.66vw;
   margin-right: 10.5px;
   width: 80px;
   height: 88px;
+}
+
+/* 1920px / 16px = 120em */
+@media (min-width: 120em) {
+  #fb_wrapper {
+    margin-left: 1414.3px;
+  }
 }
 
 #facebook_link {
@@ -161,56 +244,48 @@ a:active {
   margin-top: 5px;
 }
 
-#vertical_line {
-  background-color: #33ff98ff;
-  width: 3px;
-  height: 311px;
-  margin-left: min(394.5px, 20.55vw);
-  margin-right: 29px;
-  margin-bottom: auto;
+#top_container {
+  grid-template-areas:
+    "left top"
+    "left bottom";
 }
 
-/* 765px / 16px = 48em */
-@media (max-width: 48em) {
-  #vertical_line {
-    margin-left: 29px;
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #top_container {
+    grid-template-areas:
+      "top top"
+      "left bottom";
   }
 }
 
-#horizontal_line {
-  background-color: #33ff98ff;
-  width: 943px;
-  height: 3px;
-  margin-left: 22.28vw;
-  margin-right: auto;
-  margin-top: 57.7px;
-  margin-bottom: 3.5px;
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #top_container {
+    grid-template-columns: auto auto;
+  }
 }
 
-/* 943px / 16px = 59em */
-@media (max-width: 59em) {
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #left_container {
+    align-self: center;
+    justify-self: center;
+    padding-right: 10px;
+  }
+}
+
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #bottom_row {
+    align-self: end;
+  }
+}
+
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
   #horizontal_line {
-    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
   }
-}
-
-/* 1920px / 16px = 120em */
-@media (min-width: 120em) {
-  #horizontal_line {
-    margin-left: 427.8px;
-  }
-}
-
-#left_container {
-  font-family: Gilroy-Light;
-  align-self: end;
-  justify-self: end;
-  font-size: 2.5rem;
-  padding-right: 46px;
-  padding-left: 20vw;
-  width: 406px;
-}
-
-.contact-header {
-  font-family: Gilroy-Medium;
 }
