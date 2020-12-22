@@ -41,7 +41,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 14% auto 40%;
   grid-template-rows: auto;
   max-width: 1920px;
   margin-left: auto;
@@ -67,7 +67,7 @@ body {
   background-color: #33ff98ff;
   width: 3px;
   height: 311px;
-  margin-left: 20.55vw;
+  margin-left: 22.66vw;
   margin-right: 29px;
   margin-bottom: auto;
 }
@@ -75,7 +75,7 @@ body {
 /* 1920px / 16px = 120em */
 @media (min-width: 120em) {
   #vertical_line {
-    margin-left: 394.5px;
+    margin-left: 435px;
   }
 }
 
@@ -189,20 +189,37 @@ a:active {
   margin-bottom: 100px;
 }
 
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #info_box {
+    padding-left: 20%;
+  }
+}
+
 #page_heading {
   grid-area: page_heading;
   font-family: Gilroy-BoldItalic;
-  margin-left: 32.16%;
+  margin-left: 33%;
   margin-top: 7px;
   font-size: 6rem;
 }
 
-#corporate {
-  grid-area: corporate;
-  max-width: 1158px;
+/* 1152px / 16px = 72em */
+@media (max-width: 72em) {
+  #page_heading {
+    margin-left: 20%;
+  }
+}
+
+.section {
+  width: 60%;
   justify-self: center;
   font-family: Gilroy-Light;
   font-size: 2.5rem;
+}
+
+#corporate {
+  grid-area: corporate;
 }
 
 .section_header {
@@ -232,8 +249,8 @@ a:active {
   margin-bottom: 87.5px;
 }
 
-/* 1571px / 16px = 98em */
-@media (max-width: 98em) {
+/* 1571px / 16px = 99em */
+@media (max-width: 99em) {
   #second_line {
     width: 100%;
   }
@@ -241,10 +258,6 @@ a:active {
 
 #applications {
   grid-area: applications;
-  max-width: 1158px;
-  justify-self: center;
-  font-family: Gilroy-Light;
-  font-size: 2.5rem;
 }
 
 #third_line {
@@ -267,37 +280,44 @@ a:active {
 
 #prints {
   grid-area: prints;
-  max-width: 1158px;
-  justify-self: center;
-  font-family: Gilroy-Light;
-  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#web {
+  grid-area: web;
+  background-color: #000;
+  color: #fff;
+  width: auto;
+  justify-self: stretch;
+  padding-top: 72px;
+  padding-bottom: 47px;
+  padding-left: 7.57%;
+  margin-bottom: 54px;
+}
+
+#note {
+  grid-area: note;
+  font-family: Gilroy-LightItalic;
+  color: #86888a;
+  margin-bottom: 10.5px;
 }
 
 #footer_container {
   grid-area: footer;
+  display: grid;
+  grid-template-columns: auto 80px 10.5px 80px 17.5%;
+  grid-template-areas: ". fb . insta .";
+  width: 100%;
   max-width: 1920px;
-  margin-top: 57.7px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#links {
-  display: flex;
-}
-
 #fb_wrapper {
   background-color: #000;
-  margin-left: 73.66vw;
-  margin-right: 10.5px;
+  grid-area: fb;
   width: 80px;
   height: 88px;
-}
-
-/* 1920px / 16px = 120em */
-@media (min-width: 120em) {
-  #fb_wrapper {
-    margin-left: 1414.3px;
-  }
 }
 
 #facebook_link {
@@ -310,7 +330,7 @@ a:active {
 
 #insta_wrapper {
   background-color: #000;
-  margin-right: auto;
+  grid-area: insta;
   width: 80px;
   height: 88px;
 }
@@ -325,30 +345,34 @@ a:active {
 
 #container {
   grid-template-areas:
-    "top top"
-    "first_line first_line"
-    "info_box page_heading"
-    "corporate corporate"
-    "second_line second_line"
-    "applications applications"
-    "third_line third_line"
-    "prints prints"
-    "footer footer";
+    "top top top"
+    "first_line first_line first_line"
+    "info_box info_box page_heading"
+    "corporate corporate corporate"
+    "second_line second_line second_line"
+    "applications applications applications"
+    "third_line third_line third_line"
+    "prints prints prints"
+    ". web web"
+    "note note note"
+    "footer footer footer";
 }
 
 /* 1152px / 16px = 72em */
 @media (max-width: 72em) {
   #container {
     grid-template-areas:
-    "top top"
-    "first_line first_line"
-    "page_heading page_heading"
-    "info_box info_black_box"
-    "corporate corporate"
-    "second_line second_line"
-    "applications applications"
-    "third_line third_line"
-    "prints prints"
-    "footer footer";
+    "top top top"
+    "first_line first_line first_line"
+    "page_heading page_heading page_heading"
+    "info_box info_box info_box"
+    "corporate corporate corporate"
+    "second_line second_line second_line"
+    "applications applications applications"
+    "third_line third_line third_line"
+    "prints prints prints"
+    ". web web"
+    "note note note"
+    "footer footer footer";
   }
 }
