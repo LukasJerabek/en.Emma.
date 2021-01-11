@@ -24,10 +24,32 @@ body {
   width: 100%;
 }
 
-#top-container {
-  display: flex;
+#container {
   max-width: 1920px;
-  margin: auto;
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: 60% auto;
+}
+
+#container {
+  grid-template-areas:
+    "top top"
+    "text ."
+    "horizontal_line horizontal_line"
+    "footer footer";
+}
+
+/* 608px / 16px = 38em */
+@media (max-width: 38em) {
+  #container {
+  grid-template-columns: 80% auto;
+  }
+}
+
+#top-container {
+  grid-area: top;
+  display: flex;
 }
 
 .nav {
@@ -94,7 +116,7 @@ a:active {
 }
 
 #logo {
-  width: 27.7vw;
+  width: 27.7%;
   height: auto;
   min-height: 406px;
   min-width: 466px;
@@ -124,14 +146,15 @@ a:active {
   }
 }
 
-/* 1920px / 16px = 120em */
-@media (min-width: 120em) {
+/* 350px / 16px = 22em */
+@media (max-width: 22em) {
   #logo {
-    width: 531.84px;
+   margin-left: 25px;
   }
 }
 
 #footer_container {
+  grid-area: footer;
   display: grid;
   grid-template-columns: auto 80px 10.5px 80px 17.5%;
   grid-template-areas: ". fb . insta .";
@@ -195,6 +218,7 @@ a:active {
 }
 
 #horizontal_line {
+  grid-area: horizontal_line;
   background-color: #33ff98ff;
   width: 943px;
   height: 3px;
@@ -211,6 +235,7 @@ a:active {
 }
 
 #text_container {
+  grid-area: text;
   display: flex;
   justify-content: flex-end;
   background-color: #fff;
@@ -222,27 +247,13 @@ a:active {
   margin-top: 98px;
   margin-right: 39.1vw;
   padding-left: auto;
+  width: 100%;
 }
 
 /* 1275px / 16px = 80em */
 @media (max-width: 80em) {
   #text_container {
     padding-left: 5vw;
-    margin-right: 25vw;
-  }
-}
-
-/* 943px / 16px = 59em */
-@media (max-width: 59em) {
-  #text_container {
-    margin-right: 15vw;
-  }
-}
-
-/* 550px / 16px = 35em */
-@media (max-width: 35em) {
-  #text_container {
-    margin-right: 5vw;
   }
 }
 

@@ -196,8 +196,8 @@ a:active {
   grid-template-areas: ". work . projects .";
   font-family: Gilroy-BoldItalic;
   font-size: 4.5rem;
-  margin-top: 133px;
-  margin-bottom: 154px;
+  margin-top: 130px;
+  margin-bottom: 110px;
 }
 
 /* 912px / 16px = 57em */
@@ -294,8 +294,4 @@ a:active {
     "page_heading black_box"
     "links links"
     "footer footer";
-}
-
-/* 1152px / 16px = 72em */
-@media (max-width: 72em) {
 }
