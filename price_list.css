@@ -63,6 +63,13 @@ body {
   display: block;
 }
 
+/* 350px / 16px = 22em */
+@media (max-width: 22em) {
+  #logo {
+   margin-left: 25px;
+  }
+}
+
 #vertical_line {
   background-color: #33ff98ff;
   width: 3px;
