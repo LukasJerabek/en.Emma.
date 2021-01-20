@@ -64,6 +64,7 @@ body {
   #left_column {
     width: auto;
     min-width: 329px;
+    font-size: 2rem;
   }
 }
 
