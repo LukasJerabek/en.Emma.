@@ -9,10 +9,10 @@
   <body>
     <div id="top_container">
       <div id="left_column">
-        <div class="page-heading">KONTAKT</div>
-        <span class="contact-header">adresa</span> <br>
+        <div id="contact_heading" class="page-heading">KONTAKT</div>
+        <span id="contact_address" class="contact-header">adresa</span> <br>
         Náměstí 22/24, Velké Meziříčí 594 01  <br> <br>
-        <span class="contact-header">mobil</span> <br>
+        <span id="contact_phone" class="contact-header">mobil</span> <br>
         +420 737 951 497 <br> <br>
         <span class="contact-header">e-mail</span> <br>
         emmagraphicdesigner@icloud.com <br>
@@ -25,13 +25,13 @@
         <nav class="nav rotate">
           <ul class"nav-list">
             <li class="nav-item" style="font-weight: bold;">
-              <a href="contact.html">kontakt</a>
+              <a id="nav_contact" href="contact.html">kontakt</a>
             </li>
             <li class="nav-item">
               <a href="portfolio.html">portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="price_list.html">ceník</a>
+              <a id="nav_prices" href="prices.html">ceník</a>
             </li>
           </ul>
         </nav>
@@ -42,6 +42,11 @@
     </div>
 
     <div id="footer_container">
+      <div id="language_wrapper">
+        <a id="cs" href="contact.html">CS</a>
+        <div id="language_line"></div>
+        <a id="en" href="contact.html">EN</a>
+      </div>
       <div id="fb_wrapper">
         <a href="https://www.facebook.com/emmagdesigner/">
           <img id="facebook_link" src="img/fb_white.svg">
@@ -53,3 +58,26 @@
     </div>
   </body>
 </html>
+<script src="translations.js"></script>
+<script>
+  const lang = localStorage['lang'] || 'cs';
+  document.getElementById("en").addEventListener("click", function(){
+    localStorage['lang'] = "en";
+    console.log("je tam1")
+  })
+  document.getElementById("cs").addEventListener("click", function(){
+    localStorage['lang'] = "cs";
+    console.log("je tam")
+  })
+
+  const translate_ids = [
+    "nav_prices",
+    "nav_contact",
+    "contact_heading",
+    "contact_address",
+    "contact_phone"
+  ];
+  translate_ids.forEach(translate_id => {
+    document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id][lang];
+  })
+</script>
