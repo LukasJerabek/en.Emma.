@@ -59,8 +59,8 @@ const PricesTranslateMap = {
     "en": "basic company logo"
   },
   "basic_logo_price": {
-    "cs": "od 2.000,- Kč",
-    "en": "from 2000 CZK"
+    "cs": "od 2 000,- Kč",
+    "en": "from 2 000 CZK"
   },
   "basic_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, grafický návrh, základní barevné varianty, formáty pro běžné použití, grafiku a tisk. Další úpravy dle přání klienta účtovány sníženou hodinovou sazbou 250,- Kč",
@@ -71,8 +71,8 @@ const PricesTranslateMap = {
     "en": "standart company logo"
   },
   "standart_logo_price": {
-    "cs": "od 3.500,- Kč",
-    "en": "from 3500 CZK"
+    "cs": "od 3 500,- Kč",
+    "en": "from 3 500 CZK"
   },
   "standart_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál, užití loga na reklamních materiálech. Další úpravy dle přání klienta účtovány sníženou hodinovou sazbou 250,- Kč",
@@ -83,8 +83,8 @@ const PricesTranslateMap = {
     "en": "company logo and logo manual"
   },
   "company_logo_price": {
-    "cs": "od 5.500,- Kč",
-    "en": "from 5500 CZK"
+    "cs": "od 5 500,- Kč",
+    "en": "from 5 500 CZK"
   },
   "company_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, standartní logomanuál pro práci s logem, užití loga na reklamních materiálech a tiskovinách.",
@@ -95,8 +95,8 @@ const PricesTranslateMap = {
     "en": "graphic corporate identity"
   },
   "company_identity_price": {
-    "cs": "od 8.000,- Kč",
-    "en": "from 8000 CZK"
+    "cs": "od 8 000,- Kč",
+    "en": "from 8 000 CZK"
   },
   "company_identity_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, návrhy grafické identity firmy včetně použií na firemních materiálech, reklamních předmětech a vizitkách, rozšířený logomanuál pro práci s logem a grafickou identitou, návrhy orientačních systému ve firemních budovách, veškeré barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, korekce",
@@ -227,8 +227,8 @@ const PricesTranslateMap = {
     "en": "web design"
   },
   "web_design_price": {
-    "cs": "od 2.000,- Kč",
-    "en": "from 2000 CZK"
+    "cs": "od 2 000,- Kč",
+    "en": "from 2 000 CZK"
   },
   "web_design_desc": {
     "cs": "dle složitosti a rozsahu",
