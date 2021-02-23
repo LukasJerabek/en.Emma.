@@ -19,13 +19,13 @@
       <nav class="nav rotate">
         <ul class"nav-list">
           <li class="nav-item">
-            <a href="contact.html">kontakt</a>
+            <a id="nav_contact" href="contact.html">kontakt</a>
           </li>
           <li class="nav-item" style="font-weight: bold;">
             <a href="portfolio.html">portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="price_list.html">ceník</a>
+            <a id="nav_prices"href="prices.html">ceník</a>
           </li>
         </ul>
       </nav>
@@ -38,19 +38,24 @@
     <div id="black_box"></div>
     <div id="links">
       <div id="work_wrapper" class="portfolio_wrapper">
-        PRACOVNÍ
+        <span id="portfolio_work">PRACOVNÍ</span>
         <a href="portfolio/portfolio-work.pdf">
           <img class="portfolio_link" src="img/download.svg">
         </a>
       </div>
       <div id="projects_wrapper" class="portfolio_wrapper">
-        PROJEKTY
+        <span id="portfolio_projects">PROJEKTY</span>
         <a href="portfolio/portfolio-projects.pdf">
           <img class="portfolio_link" src="img/download.svg">
         </a>
       </div>
     </div>
     <div id="footer_container">
+      <div id="language_wrapper">
+        <a id="cs" href="portfolio.html">CS</a>
+        <div id="language_line"></div>
+        <a id="en" href="portfolio.html">EN</a>
+      </div>
       <div id="fb_wrapper">
         <a href="https://www.facebook.com/emmagdesigner/">
           <img id="facebook_link" src="img/fb_white.svg">
@@ -64,3 +69,23 @@
   </div>
 </body>
 </html>
+<script src="translations.js"></script>
+<script>
+  const lang = localStorage['lang'] || 'cs';
+  document.getElementById("en").addEventListener("click", function(){
+    localStorage['lang'] = "en";
+  });
+  document.getElementById("cs").addEventListener("click", function(){
+    localStorage['lang'] = "cs";
+  });
+  const translate_ids = [
+    "nav_prices",
+    "nav_contact",
+    "portfolio_work",
+    "portfolio_projects"
+  ];
+  translate_ids.forEach(translate_id => {
+    document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id][lang];
+  })
+  
+</script>
