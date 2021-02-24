@@ -63,10 +63,24 @@ body {
   display: block;
 }
 
-/* 350px / 16px = 22em */
-@media (max-width: 22em) {
+/* 1120px / 16px = 70em */
+@media (max-width: 70em) {
   #logo {
-   margin-left: 25px;
+    margin-right: 20%;
+  }
+}
+
+/* 848px / 16px = 53em */
+@media (max-width: 53em) {
+  #logo {
+    margin-right: 15%;
+  }
+}
+
+/* 608px / 16px = 38em */
+@media (max-width: 38em) {
+  #logo {
+    margin-right: 29px;
   }
 }
 
@@ -74,22 +88,15 @@ body {
   background-color: #33ff98ff;
   width: 3px;
   height: 311px;
-  margin-left: 22.66vw;
+  margin-left: 22.66%;
   margin-right: 29px;
   margin-bottom: auto;
 }
 
-/* 1920px / 16px = 120em */
-@media (min-width: 120em) {
+/* 1120px / 16px = 70em */
+@media (max-width: 70em) {
   #vertical_line {
-    margin-left: 435px;
-  }
-}
-
-/* 765px / 16px = 48em */
-@media (max-width: 48em) {
-  #vertical_line {
-    margin-left: 29px;
+    margin-left: 0px;
   }
 }
 
@@ -102,9 +109,8 @@ body {
   margin-right: 17.5vw;
 }
 
-
-/* 1152px / 16px = 72em */
-@media (max-width: 72em) {
+/* 608px / 16px = 38em */
+@media (max-width: 38em) {
   .nav {
   margin-right: auto;
   }
@@ -203,6 +209,13 @@ a:active {
   }
 }
 
+/* 544px / 16px = 34em */
+@media (max-width: 34em) {
+  #info_box {
+    padding: 60px;
+  }
+}
+
 #prices_heading {
   grid-area: prices_heading;
   font-family: Gilroy-BoldItalic;
@@ -223,6 +236,13 @@ a:active {
   justify-self: center;
   font-family: Gilroy-Light;
   font-size: 2.5rem;
+}
+
+/* 544px / 16px = 34em */
+@media (max-width: 34em) {
+  .section {
+    width: 80%;
+  }
 }
 
 #corporate {
