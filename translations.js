@@ -9,7 +9,7 @@ const CommonTranslateMap = {
   },
   "text": {
     "cs": "Vítejte na mém webu, jmenuji se Emma Fojtíková a pomůžu vám s čímkoliv, co se týká grafického designu. Můžeme spolu vytvořit, případně oživit, celou vaši vizuální identitu, kterou se budete prezentovat do světa a jejíž základem bude logo ušité na míru. Potřebujete-li spíše věci drobnějšího charakteru, jako například vizitky, reklamní plochy, letáky, nebo katalogy, i s tím se na mě můžete obrátit. Zkušenosti mám i s návrhem webů, knih a obalovým designem. Kontaktovat mě můžete na facebooku nebo na emailu. Těším se na naši spolupráci!",
-    "en": "Welcome to my website, my name is Emma Fojtikova and I will help you with anything in terms of graphic design. Together we can create or revive your entire visual identity, which will present you to the world and well be based on a tailor-made logo. If you need things of a smaller nature, such as business cards, advertising space, flyers or catalogs, you can contact me with that too. I also have experience with design of websites, books and packaging. You can contact me on Facebook or by email. I'm looking forward to our cooperation!"
+    "en": "Welcome to my website, my name is Emma Fojtikova and I will help you with anything in terms of graphic design. Together we can create or revive your entire visual identity, which will present you to the world with a tailor-made logo. If you need things of a smaller nature, such as business cards, advertising space, flyers or catalogues, you can contact me about it as well. I also have experiences with designing websites, books and packaging. You can contact me on Facebook or by email. I'm looking forward to our cooperation!"
   },
   "portfolio_work": {
     "cs": "PRACOVNÍ",
@@ -63,8 +63,8 @@ const PricesTranslateMap = {
     "en": "from 2 000 CZK"
   },
   "basic_logo_desc": {
-    "cs": "v ceně: průběžná konzultace s klientem, grafický návrh, základní barevné varianty, formáty pro běžné použití, grafiku a tisk. Další úpravy dle přání klienta účtovány sníženou hodinovou sazbou 250,- Kč",
-    "en": "included: consultation with the client, graphic design, basic color variants, formats for common use, graphics and printing. Other adjustments according to the client's wishes are charged at a reduced hourly rate of CZK 250."
+    "cs": "v ceně: průběžná konzultace s klientem, grafický návrh, základní barevné varianty, formáty pro běžné použití, grafiku a tisk.",
+    "en": "included: consultation with the client, graphic design, basic color variants, formats for common use, graphics and printing."
   },
   "standart_logo": {
     "cs": "standartní firemní logo",
@@ -75,8 +75,8 @@ const PricesTranslateMap = {
     "en": "from 3 500 CZK"
   },
   "standart_logo_desc": {
-    "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál, užití loga na reklamních materiálech. Další úpravy dle přání klienta účtovány sníženou hodinovou sazbou 250,- Kč",
-    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing, basic logo manual, use of the logo on advertising materials. Other adjustments according to the client's wishes are charged at a reduced hourly rate of CZK 250."
+    "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál, užití loga na reklamních materiálech.",
+    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing, basic logo manual, logo previews on advertising materials."
   },
   "company_logo": {
     "cs": "firemní logo a manuál",
@@ -88,7 +88,7 @@ const PricesTranslateMap = {
   },
   "company_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, standartní logomanuál pro práci s logem, užití loga na reklamních materiálech a tiskovinách.",
-    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing formats and other formats on request, standard logo manual for working with the logo, use of the logo on advertising materials and printed materials."
+    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing as well as other formats on request, standard logo manual for working with the logo, logo previews on advertising materials and printed materials."
   },
   "company_identity": {
     "cs": "celková grafická firemní identita",
@@ -100,7 +100,7 @@ const PricesTranslateMap = {
   },
   "company_identity_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, návrhy grafické identity firmy včetně použií na firemních materiálech, reklamních předmětech a vizitkách, rozšířený logomanuál pro práci s logem a grafickou identitou, návrhy orientačních systému ve firemních budovách, veškeré barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, korekce",
-    "en": "included: consultation with the client, more graphic designs, design of the company's graphic identity, including use on company materials, promotional items and business cards, extended logo manual for working with the logo and graphic identity, designs of orientation systems in company buildings, all color variants, formats for common use, graphics and printing as well as other formats on request, correction"
+    "en": "included: consultation with the client, more graphic designs, design of the company's graphic identity including previews on company materials, promotional items and business cards, extended logo manual for working with the logo and graphic identity, designs of orientation systems in company buildings, all color variants, formats for common use, graphics and printing as well as other formats on request, corrections"
   },
   "graphic_manual": {
     "cs": "grafický manuál",
@@ -112,7 +112,7 @@ const PricesTranslateMap = {
   },
   "graphic_manual_desc": {
     "cs": "dle rozsahu a výběru aplikací",
-    "en": "according to the range"
+    "en": "according to the range of work"
   },
   "section_aplications": {
     "cs": "GRAFICKÉ NÁVRHY FIREMNÍCH APLIKACÍ",
@@ -163,8 +163,8 @@ const PricesTranslateMap = {
     "en": "from 500 CZK"
   },
   "catalogue_desc": {
-    "cs": "grafický návrh titulní strany a vnitřních stran, sazba katalogů od 50,- Kč/strana",
-    "en": "graphic design of title page and inner pages, rest of the catalogue design is 50 CZK/per page banners and advertisements"
+    "cs": "grafický návrh titulní strany a vnitřních stran obálky, sazba katalogů od 50,- Kč/strana",
+    "en": "graphic design of title page and inner pages of the cover, rest of the catalogue design is 50 CZK/per page"
   },
   "banners_applications": {
     "cs": "bannery a inzerce",
