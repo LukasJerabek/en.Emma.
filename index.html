@@ -11,17 +11,19 @@
 <body>
   <div id="container">
     <div id="top-container">
-      <img id="logo" src="img/logo_white.svg">
-        <div id="vertical_line">
-        </div>
-        <nav class="nav rotate">
-          <ul class"nav-list">
-            <li class="nav-item"><a id="nav_contact" href="contact.html">kontakt</a></li>
-            <li class="nav-item"><a href="portfolio.html">portfolio</a></li>
-            <li class="nav-item"><a id="nav_prices" href="prices.html">ceník</a></li>
-          </ul>
-        </nav>
+      <a id="logo" href="index.html">
+        <img src="img/logo_white.svg">
+      </a>
+      <div id="vertical_line">
       </div>
+      <nav class="nav rotate">
+        <ul class"nav-list">
+          <li class="nav-item"><a id="nav_contact" href="contact.html">kontakt</a></li>
+          <li class="nav-item"><a href="portfolio.html">portfolio</a></li>
+          <li class="nav-item"><a id="nav_prices" href="prices.html">ceník</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <div id="text_container">
       <div id="text">
@@ -74,5 +76,6 @@
   translate_ids.forEach(translate_id => {
     document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id][lang];
   })
+  document.getElementById(`${lang}`).style.fontWeight = "bold";
 
 </script>

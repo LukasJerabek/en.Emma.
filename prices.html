@@ -251,4 +251,5 @@
   document.querySelectorAll("p").forEach(offer_element => {
     document.getElementById(offer_element.id).innerHTML = PricesTranslateMap[offer_element.id][lang];
   });
+  document.getElementById(`${lang}`).style.fontWeight = "bold";
 </script>

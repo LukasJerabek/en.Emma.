@@ -110,8 +110,7 @@ a:active {
 #logo {
   width: 384px;
   height: auto;
-  min-height: 406px;
-  margin-top: 130px;
+  margin-top: 170px;
   margin-left: auto;
   display: block;
 }
@@ -249,8 +248,6 @@ a:active {
   padding-bottom: 60px;
   padding-right: 8.3%;
   margin-top: 98px;
-  padding-left: auto;
-  width: 100%;
 }
 
 /* 1275px / 16px = 80em */
