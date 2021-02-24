@@ -17,6 +17,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 912px / 16px = 57em */
+@media (max-width: 57em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,16 +33,24 @@ body {
 
 #container {
   max-width: 1920px;
+  min-width: 400px;
   display: grid;
   margin-right: auto;
   margin-left: auto;
   grid-template-columns: 60% auto;
 }
 
-/* 608px / 16px = 38em */
-@media (max-width: 38em) {
+/* 1275px / 16px = 80em */
+@media (max-width: 80em) {
   #container {
-  grid-template-columns: auto 100px;
+  grid-template-columns: auto 20%;
+  }
+}
+
+/* 928px / 16px = 58em */
+@media (max-width: 58em) {
+  #container {
+  grid-template-columns: auto 25px;
   }
 }
 
@@ -76,7 +91,7 @@ nav li {
   display:inline-block;
   list-style-type: none;
   font-family: Gilroy-Light;
-  font-size: 2.5rem;
+  font-size: 25px;
 }
 
 a:link {
@@ -119,6 +134,7 @@ a:active {
 @media (max-width: 44em) {
   #logo {
     width: 300px;
+    margin-top: 186px;
   }
 }
 
@@ -126,13 +142,28 @@ a:active {
 @media (max-width: 35em) {
   #logo {
     width: 239px;
+    margin-top: 197px;
   }
 }
 
-/* 350px / 16px = 22em */
-@media (max-width: 22em) {
+/* 1120px / 16px = 70em */
+@media (max-width: 70em) {
   #logo {
-   margin-left: 25px;
+    margin-right: 20%;
+  }
+}
+
+/* 848px / 16px = 53em */
+@media (max-width: 53em) {
+  #logo {
+    margin-right: 15%;
+  }
+}
+
+/* 496px / 16px = 31em */
+@media (max-width: 31em) {
+  #logo {
+    margin-right: 29px;
   }
 }
 
@@ -213,10 +244,10 @@ a:active {
   margin-bottom: auto;
 }
 
-/* 765px / 16px = 48em */
-@media (max-width: 48em) {
+/* 1120px / 16px = 70em */
+@media (max-width: 70em) {
   #vertical_line {
-    margin-left: 29px;
+    margin-left: 0px;
   }
 }
 
@@ -254,6 +285,8 @@ a:active {
 @media (max-width: 80em) {
   #text_container {
     padding-left: 5vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -261,8 +294,8 @@ a:active {
   width: 660px;
 }
 
-/* 608px / 16px = 38em */
-@media (max-width: 38em) {
+/* 700px / 16px = 44em */
+@media (max-width: 44em) {
   #text {
     width: 100%;
   }
