@@ -245,7 +245,7 @@ a:active {
   display: grid;
   grid-area: links;
   grid-template-columns: 21% 225px 11% 225px auto;
-  grid-template-areas: ". work . projects .";
+  grid-template-areas: ". projects . work .";
   font-family: Gilroy-BoldItalic;
   font-size: 4.5rem;
   margin-top: 130px;
