@@ -75,8 +75,8 @@ const PricesTranslateMap = {
     "en": "from 3 500 CZK"
   },
   "standart_logo_desc": {
-    "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál, užití loga na reklamních materiálech.",
-    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing, basic logo manual, logo previews on advertising materials."
+    "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál.",
+    "en": "included: consultation with the client, more graphic designs, basic color variants, formats for common use, graphics and printing, basic logo manual."
   },
   "company_logo": {
     "cs": "firemní logo a manuál",

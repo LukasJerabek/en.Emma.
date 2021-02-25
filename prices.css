@@ -166,12 +166,12 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  font-weight: bold;
+  font-family: Gilroy-Medium;
 }
 
 a:active {
   text-decoration: none;
-  font-weight: bold;
+  font-family: Gilroy-Medium;
 }
 
 .rotate {
@@ -359,7 +359,7 @@ a:active {
   height: 88px;
   display: flex;
   color: #000;
-  font-family: Gilroy-Medium;
+  font-family: Gilroy-Light;
   font-size: 2.5rem;
   justify-content: space-evenly;
   align-items: center;
@@ -371,6 +371,14 @@ a:active {
 
 #language_wrapper a:visited {
   color: #000;
+}
+
+#language_wrapper a:hover {
+  font-family: Gilroy-Bold;
+}
+
+#language_wrapper a:active {
+  font-family: Gilroy-Bold;
 }
 
 #language_line {
