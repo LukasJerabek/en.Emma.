@@ -21,8 +21,8 @@
           <li class="nav-item">
             <a id="nav_contact" href="contact.html">kontakt</a>
           </li>
-          <li class="nav-item" style="font-weight: bold;">
-            <a href="portfolio.html">portfolio</a>
+          <li class="nav-item">
+            <a id="nav_portfolio" href="portfolio.html">portfolio</a>
           </li>
           <li class="nav-item">
             <a id="nav_prices"href="prices.html">ceník</a>
@@ -88,5 +88,6 @@
     document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id][lang];
   })
   document.getElementById(`${lang}`).style.fontFamily = "Gilroy-Bold";
+  document.getElementById("nav_portfolio").style.fontFamily = "Gilroy-Medium";
   
 </script>
