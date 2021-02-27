@@ -91,8 +91,8 @@ body {
   }
 }
 
-/* 544px / 16px = 34em */
-@media (max-width: 34em) {
+/* 608px / 16px = 38em */
+@media (max-width: 38em) {
   #logo {
     margin-right: 29px;
   }
@@ -137,8 +137,8 @@ body {
   }
 }
 
-/* 1120px / 16px = 70em */
-@media (max-width: 70em) {
+/* 608px / 16px = 38em */
+@media (max-width: 38em) {
   .nav {
     margin-right: auto;
   }
@@ -152,7 +152,7 @@ nav ul {
   padding-top: 9px;
   padding-bottom: 9px;
   margin: 0px;
-  margin-right: 3px;
+  margin-right: 2.5px;
 }
 
 nav li {

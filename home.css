@@ -89,7 +89,7 @@ nav ul {
   padding-top: 9px;
   padding-bottom: 9px;
   margin: 0px;
-  margin-right: 3px;
+  margin-right: 2.5px;
 }
 
 nav li {
@@ -135,16 +135,16 @@ a:active {
   display: block;
 }
 
-/* 700px / 16px = 44em */
-@media (max-width: 44em) {
+/* 1275px / 16px = 80em */
+@media (max-width: 80em) {
   #logo {
     width: 300px;
     margin-top: 186px;
   }
 }
 
-/* 550px / 16px = 35em */
-@media (max-width: 35em) {
+/* 700px / 16px = 44em */
+@media (max-width: 44em) {
   #logo {
     width: 239px;
     margin-top: 197px;
