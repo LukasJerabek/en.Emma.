@@ -47,8 +47,8 @@ const PricesTranslateMap = {
     "en": "PRICES"
   },
   "info_box": {
-    "cs": "Veškeré ceny jsou pouze orientační, vše se odvíjí od složitosti práce a od časové náročnosti. Ostatní práci tvořím v hodinové sazbě 250 Kč/hod.",
-    "en": "All prices are only indicative, everything depends on the complexity of the work and the time required. I create other work at an hourly rate of 250 CZK / hour."
+    "cs": "Veškeré ceny jsou pouze orientační, vše se odvíjí od složitosti práce a od časové náročnosti. Ostatní práci tvořím v hodinové sazbě 220 Kč/hod.",
+    "en": "All prices are only indicative, everything depends on the complexity of the work and the time required. I create other work at an hourly rate of 220 CZK / hour."
   },
   "section_corporate": {
     "cs": "KORPORÁTNÍ DESIGN",
@@ -59,8 +59,8 @@ const PricesTranslateMap = {
     "en": "basic company logo"
   },
   "basic_logo_price": {
-    "cs": "od 2 000,- Kč",
-    "en": "from 2 000 CZK"
+    "cs": "od 1 500,- Kč",
+    "en": "from 1 500 CZK"
   },
   "basic_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, grafický návrh, základní barevné varianty, formáty pro běžné použití, grafiku a tisk.",
@@ -71,8 +71,8 @@ const PricesTranslateMap = {
     "en": "standart company logo"
   },
   "standart_logo_price": {
-    "cs": "od 3 500,- Kč",
-    "en": "from 3 500 CZK"
+    "cs": "od 2 200,- Kč",
+    "en": "from 2 200 CZK"
   },
   "standart_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk, základní logomanuál.",
@@ -83,8 +83,8 @@ const PricesTranslateMap = {
     "en": "company logo and logo manual"
   },
   "company_logo_price": {
-    "cs": "od 5 500,- Kč",
-    "en": "from 5 500 CZK"
+    "cs": "od 3 000,- Kč",
+    "en": "from 3 000 CZK"
   },
   "company_logo_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, základní barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, standartní logomanuál pro práci s logem, užití loga na reklamních materiálech a tiskovinách.",
@@ -95,8 +95,8 @@ const PricesTranslateMap = {
     "en": "graphic corporate identity"
   },
   "company_identity_price": {
-    "cs": "od 8 000,- Kč",
-    "en": "from 8 000 CZK"
+    "cs": "od 6 000,- Kč",
+    "en": "from 6 000 CZK"
   },
   "company_identity_desc": {
     "cs": "v ceně: průběžná konzultace s klientem, více grafických návrhů, návrhy grafické identity firmy včetně použií na firemních materiálech, reklamních předmětech a vizitkách, rozšířený logomanuál pro práci s logem a grafickou identitou, návrhy orientačních systému ve firemních budovách, veškeré barevné varianty, formáty pro běžné použití, grafiku a tisk i další formáty na vyžádání, korekce",
@@ -107,8 +107,8 @@ const PricesTranslateMap = {
     "en": "graphic manual"
   },
   "graphic_manual_price": {
-    "cs": "od 800,- Kč",
-    "en": "from 800 CZK"
+    "cs": "od 500,- Kč",
+    "en": "from 500 CZK"
   },
   "graphic_manual_desc": {
     "cs": "dle rozsahu a výběru aplikací",
@@ -247,7 +247,7 @@ const PricesTranslateMap = {
     "en": "according to complexity"
   },
   "note": {
-    "cs": "Uvedené ceny jsou orientační, napište si o přesnou kalkulaci podle vašich konkrétních požadavků. Ostatní práci tvořím v hodinové sazbě <b>250 Kč/hod.</b>",
-    "en": "The listed prices are indicative, write me for the exact calculation according to your specific requirements. I create other work at an hourly rate of <b>250 CZK / hour.</b>"
+    "cs": "Uvedené ceny jsou orientační, napište si o přesnou kalkulaci podle vašich konkrétních požadavků. Ostatní práci tvořím v hodinové sazbě <b>220 Kč/hod.</b>",
+    "en": "The listed prices are indicative, write me for the exact calculation according to your specific requirements. I create other work at an hourly rate of <b>220 CZK / hour.</b>"
   }
 }
