@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>Emma. | Graphic Designer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link href="portfolio.css" rel="stylesheet" type="text/css" />
+  <link hreflang="x-default" href="http://emmagraphicdesigner.com" rel="alternate">
+  <link hreflang="cs" href="http://cs.emmagraphicdesigner.com" rel="alternate">
 </head>
 
 <body>
@@ -52,9 +54,9 @@
     </div>
     <div id="footer_container">
       <div id="language_wrapper">
-        <a id="cs" href="portfolio.html">CS</a>
+        <a id="cs" href="http://cs.emmagraphicdesigner.com/portfolio.html">CS</a>
         <div id="language_line"></div>
-        <a id="en" href="portfolio.html">EN</a>
+        <a id="en" href="http://en.emmagraphicdesigner.com/portfolio.html">EN</a>
       </div>
       <div id="fb_wrapper">
         <a href="https://www.facebook.com/emmagdesigner/">
@@ -71,16 +73,6 @@
 </html>
 <script src="translations.js"></script>
 <script>
-  const found_lang = localStorage['lang'] || window.navigator.language.substring(0,2);
-  const allowed_languages = ["en", "cs"];
-  const lang = allowed_languages.includes(found_lang) ? found_lang : "en";
-  localStorage['lang'] = lang;
-  document.getElementById("en").addEventListener("click", function(){
-    localStorage['lang'] = "en";
-  });
-  document.getElementById("cs").addEventListener("click", function(){
-    localStorage['lang'] = "cs";
-  });
   const translate_ids = [
     "nav_prices",
     "nav_contact",
@@ -88,9 +80,9 @@
     "portfolio_projects"
   ];
   translate_ids.forEach(translate_id => {
-    document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id][lang];
+    document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id]["en"];
   })
-  document.getElementById(`${lang}`).style.fontFamily = "Gilroy-Bold";
+  document.getElementById("en").style.fontFamily = "Gilroy-Bold";
   document.getElementById("nav_portfolio").style.fontFamily = "Gilroy-Medium";
   
 </script>
