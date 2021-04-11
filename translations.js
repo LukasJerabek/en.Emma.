@@ -7,6 +7,10 @@ const CommonTranslateMap = {
     "cs": "kontakt",
     "en": "contact"
   },
+  "nav_portfolio": {
+    "cs": "portfolio",
+    "en": "portfolio"
+  },
   "text": {
     "cs": "Vítejte na mém webu, jmenuji se Emma Fojtíková a pomůžu vám s čímkoliv, co se týká grafického designu. Můžeme spolu vytvořit, případně oživit, celou vaši vizuální identitu, kterou se budete prezentovat do světa a jejíž základem bude logo ušité na míru. Potřebujete-li spíše věci drobnějšího charakteru, jako například vizitky, reklamní plochy, letáky, nebo katalogy, i s tím se na mě můžete obrátit. Zkušenosti mám i s návrhem webů, knih a obalovým designem. Kontaktovat mě můžete na facebooku nebo na emailu. Těším se na naši spolupráci!",
     "en": "Welcome to my website, my name is Emma Fojtikova and I will help you with anything in terms of graphic design. Together we can create or revive your entire visual identity, which will present you to the world with a tailor-made logo. If you need things of a smaller nature, such as business cards, advertising space, flyers or catalogues, you can contact me about it as well. I also have experiences with designing websites, books and packaging. You can contact me on Facebook or by email. I'm looking forward to our cooperation!"
@@ -41,6 +45,10 @@ const PricesTranslateMap = {
   "nav_contact": {
     "cs": "kontakt",
     "en": "contact"
+  },
+  "nav_portfolio": {
+    "cs": "portfolio",
+    "en": "portfolio"
   },
   "prices_heading": {
     "cs": "CENÍK",
