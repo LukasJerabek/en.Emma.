@@ -20,7 +20,7 @@
       <div id="vertical_line">
       </div>
       <nav class="nav rotate">
-        <ul class"nav-list">
+        <ul class="nav-list">
           <li class="nav-item"><a id="nav_contact" href="contact.html">kontakt</a></li>
           <li class="nav-item"><a href="portfolio.html">portfolio</a></li>
           <li class="nav-item"><a id="nav_prices" href="prices.html">ceník</a></li>
@@ -57,18 +57,18 @@
         <img id="instagram_link" src="img/insta.svg" alt="insta_logo">
       </div>
   </div>
+  <script src="translations.js"></script>
+  <script>
+    const translate_ids = [
+      "nav_prices",
+      "nav_contact",
+      "text",
+    ];
+    translate_ids.forEach(translate_id => {
+      document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id]["en"];
+    })
+    document.getElementById("en").style.fontFamily = "Gilroy-Bold";
+
+  </script>
 </body>
 </html>
-<script src="translations.js"></script>
-<script>
-  const translate_ids = [
-    "nav_prices",
-    "nav_contact",
-    "text",
-  ];
-  translate_ids.forEach(translate_id => {
-    document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id]["en"];
-  })
-  document.getElementById("en").style.fontFamily = "Gilroy-Bold";
-
-</script>
