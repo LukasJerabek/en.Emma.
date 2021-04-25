@@ -23,13 +23,13 @@
       <nav class="nav rotate">
         <ul class="nav-list">
           <li class="nav-item">
-            <a id="nav_contact" href="contact.html"></a>
+            <a id="nav_contact" href="contact.html">contact</a>
           </li>
           <li class="nav-item">
-            <a id="nav_portfolio" href="portfolio.html"></a>
+            <a id="nav_portfolio" href="portfolio.html">portfolio</a>
           </li>
           <li class="nav-item">
-            <a id="nav_prices"href="prices.html"></a>
+            <a id="nav_prices"href="prices.html">prices</a>
           </li>
         </ul>
       </nav>
@@ -42,13 +42,13 @@
     <div id="black_box"></div>
     <div id="links">
       <div id="projects_wrapper" class="portfolio_wrapper">
-        <span id="portfolio_projects"></span>
+        <span id="portfolio_projects">PROJECTS</span>
         <a href="portfolio/portfolio-projects.pdf">
           <img class="portfolio_link" src="img/download.svg">
         </a>
       </div>
       <div id="work_wrapper" class="portfolio_wrapper">
-        <span id="portfolio_work"></span>
+        <span id="portfolio_work">WORK</span>
         <a href="portfolio/portfolio-work.pdf">
           <img class="portfolio_link" src="img/download.svg">
         </a>
@@ -73,16 +73,6 @@
   </div>
   <script src="translations.js"></script>
   <script>
-    const translate_ids = [
-      "nav_prices",
-      "nav_contact",
-      "nav_portfolio",
-      "portfolio_work",
-      "portfolio_projects"
-    ];
-    translate_ids.forEach(translate_id => {
-      document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id]["en"];
-    })
     document.getElementById("en").style.fontFamily = "Gilroy-Bold";
     document.getElementById("nav_portfolio").style.fontFamily = "Gilroy-Medium";
     

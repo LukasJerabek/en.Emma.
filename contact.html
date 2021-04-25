@@ -13,10 +13,10 @@
   <body>
     <div id="top_container">
       <div id="left_column">
-        <div id="contact_heading" class="page-heading"></div>
-        <span id="contact_address" class="contact-header"></span> <br>
+        <div id="contact_heading" class="page-heading">CONTACT</div>
+        <span id="contact_address" class="contact-header">address</span> <br>
         Namesti 22/24, Velke Mezirici 594 01  <br> <br>
-        <span id="contact_phone" class="contact-header"></span> <br>
+        <span id="contact_phone" class="contact-header">phone</span> <br>
         +420 737 951 497 <br> <br>
         <span class="contact-header">e-mail</span> <br>
         emmagraphicdesigner@icloud.com <br>
@@ -29,13 +29,13 @@
         <nav class="nav rotate">
           <ul class="nav-list">
             <li class="nav-item">
-              <a id="nav_contact" href="contact.html"></a>
+              <a id="nav_contact" href="contact.html">contact</a>
             </li>
             <li class="nav-item">
-              <a id="nav_portfolio" href="portfolio.html"></a>
+              <a id="nav_portfolio" href="portfolio.html">portfolio</a>
             </li>
             <li class="nav-item">
-              <a id="nav_prices" href="prices.html"></a>
+              <a id="nav_prices" href="prices.html">prices</a>
             </li>
           </ul>
         </nav>
@@ -62,17 +62,6 @@
     </div>
     <script src="translations.js"></script>
     <script>
-      const translate_ids = [
-        "nav_prices",
-        "nav_contact",
-        "nav_portfolio",
-        "contact_heading",
-        "contact_address",
-        "contact_phone"
-      ];
-      translate_ids.forEach(translate_id => {
-        document.getElementById(translate_id).innerHTML = CommonTranslateMap[translate_id]["en"];
-      })
       document.getElementById("en").style.fontFamily = "Gilroy-Bold";
       document.getElementById("nav_contact").style.fontFamily = "Gilroy-Medium";
     </script>
